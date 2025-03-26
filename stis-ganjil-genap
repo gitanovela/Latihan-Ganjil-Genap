@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Ganjil Genap</title>
+</head>
+<body>
+    <h2>Cek Ganjil atau Genap</h2>
+    <input type="number" id="angka" placeholder="Masukkan angka">
+    <button onclick="cek()">Cek</button>
+    <p id="hasil"></p>
+
+    <script>
+        function cek() {
+            let angka = document.getElementById("angka").value;
+            let hasil = (angka % 2 === 0) ? "Angka Genap" : "Angka Ganjil";
+            document.getElementById("hasil").innerText = hasil;
+        }
+    </script>
+</body>
+</html>
